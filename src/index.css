@@ -1,3 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Customize background colors */
+.primary {
+    background: #071229;
+}
+.secondary {
+    background: #0F9FF7;;
+}
+/* Customize Hover */
+
+/* Customize Button */
+
+/* Customize  Text */
+
+/* Menu */
+ul li {
+    padding: .5rem ;
+    transition: .3s;
+    cursor: pointer;
+}
+ul li:hover {
+    background: #071229;
+}
+
+.sign-in-sign-up-btn {
+    border-radius: 50px;
+    background: rgba(89, 89, 89, 0.40);
+    position: absolute;
+    display: flex;
+    height: 41px;
+    /* width: 169px; */
+    right: 7px;
+    top: 18px;
+}
+
+@media  screen and (min-width: 768px) {
+    .sign-in-sign-up-btn{
+        right: 30px;
+        top: 18px;
+    }
+}
+@media  screen and (min-width: 1024px) {
+    .sign-in-sign-up-btn{
+        right: 80px;
+        top: 18px;
+    }
+}
