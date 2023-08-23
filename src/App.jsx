@@ -10,10 +10,12 @@ import Faq from './page/Faq'
 import Testimonials from './page/Testimonial'
 import Modal from './components/Modal';
 import { useState } from 'react';
+import { MyProvider } from './Contexts/MyContext';
 
 function App() {
   return (
-    <>
+    <div className='bg-no-repeat'>
+    <MyProvider>
       <BrowserRouter>
           <div className="w-full primary">
             <Navbar />
@@ -28,7 +30,8 @@ function App() {
               <Route path='/testimonials' element={<Testimonials /> } />
           </Routes>
         </BrowserRouter>
-    </>
+    </MyProvider>
+    </div>
   )
 }
 

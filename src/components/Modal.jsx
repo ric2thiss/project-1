@@ -9,7 +9,7 @@ function Modal({visible, onClose}) {
 
 
   return (
-    <div id='outerContainer' onClick={handleClose} className='fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center font-poppins'>
+    <div id='outerContainer' onClick={handleClose} className='fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center font-poppins'>
         <div className='flex justify-center items-center gap-60' style={{
             borderRadius: '0px 20px 20px 20px',
             border: '1px solid #595959',

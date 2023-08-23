@@ -66,6 +66,30 @@ ul li:hover {
     .sign-in-sign-up-btn{
         display: none;
     }
+    .logo{
+        height: 60px;
+        width: 150px;
+        padding: 10px;
+    }
+    .search-icon{
+        position: absolute;
+        top: 11px;
+
+    }
+    .toggle{
+        position: absolute;
+    }
+    .label{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .logo{
+        height: 80px;
+        width: 170px;
+        /* padding: 10px; */
+    }
 }
 
 @media  screen and (min-width: 768px) {
@@ -73,10 +97,29 @@ ul li:hover {
         right: 30px;
         top: 18px;
     }
+    .service:hover .sub-1 {
+        top: 60px;
+        left: 0;
+    }
+    
 }
 @media  screen and (min-width: 1024px) {
     .sign-in-sign-up-btn{
         right: 100px;
         top: 18px;
+    }
+    .search-icon {
+        right: 30px;
+    }
+    .service:hover .sub-1 {
+        top: 28px;
+        left: 60px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .service:hover .sub-1 {
+        top: 28px;
+        left: 90px;
     }
 }

@@ -8,7 +8,7 @@ function RegModal({regVisible, onClose,}) {
     }
     if(!regVisible) return null;
   return (
-    <div id='outerContainer' onClick={handleClose} className='fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center font-poppins'>
+    <div id='outerContainer' onClick={handleClose} className='fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center font-poppins'>
         <div className='flex justify-center items-center gap-60 bg-black' 
         style={{
             width: '500px',
