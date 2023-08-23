@@ -7,6 +7,7 @@ function Modal({visible, onClose}) {
     }
     if(!visible) return null;
 
+
   return (
     <div id='outerContainer' onClick={handleClose} className='fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center font-poppins'>
         <div className='flex justify-center items-center gap-60' style={{

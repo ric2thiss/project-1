@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Divider  */
+.divider {
+    width: 100px;
+    height: 3px;
+    background: #0F9FF7;
+}
 /* Customize background colors */
 .primary {
     background: #071229;
@@ -11,11 +17,6 @@
 .secondary {
     background: #0F9FF7;;
 }
-/* Customize Hover */
-
-/* Customize Button */
-
-/* Customize  Text */
 
 /* Menu */
 ul li {
@@ -38,6 +39,35 @@ ul li:hover {
     top: 18px;
 }
 
+/* Sub menu 1 */
+.sub-1{
+    display: none;
+}
+.sub-1 li {
+    width: 100%;
+}
+.service {
+    position: static;
+}
+.service:hover .sub-1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 22px;
+    padding: 12px 10px;
+    z-index: 99;
+    margin: 0;
+    text-align: left;
+    border-radius: 0px 20px 20px 20px;
+    background: #313131;
+}
+
+@media  screen and (min-width: 320px) {
+    .sign-in-sign-up-btn{
+        display: none;
+    }
+}
+
 @media  screen and (min-width: 768px) {
     .sign-in-sign-up-btn{
         right: 30px;
@@ -46,7 +76,7 @@ ul li:hover {
 }
 @media  screen and (min-width: 1024px) {
     .sign-in-sign-up-btn{
-        right: 80px;
+        right: 100px;
         top: 18px;
     }
 }
